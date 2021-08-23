@@ -24,7 +24,7 @@ public class DiscordBotPooApplication {
 	@Bean
 	@ConfigurationProperties(value = "discord-api")
 	public DiscordApi discordApi() {
-		String token = "ODc5NDY5MzgzODI5ODIzNDk4.YSQLsA.injHgytwN90Gr_jV5-7qW2ioi94";
+		String token = "";
 		DiscordApi api = new DiscordApiBuilder().setToken(token)
 		.setAllNonPrivilegedIntents()
 		.login()
